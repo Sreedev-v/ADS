@@ -18,8 +18,6 @@ void initilize()
 }
 void bitVector(char ary[], int v[], int sze)
 {
-    //ary can be setA or setB
-    //v can be vA or vB
 	int i,j;
 	for(i=0;i<sze;i++)
 	{
@@ -69,13 +67,11 @@ int main()
 {
 	int i, sa=3, sb=3;
 
-	initilize(); //function call to initialize
-    //call to form bitVector representation of setA and setB
+	initilize(); 
 	bitVector(setA, vA, sa);
 	bitVector(setB, vB, sb);
 	display(vA);
 	display(vB);
-	//call set operations
     	setunion(vA, vB);
     	display(result);
     	setintersection(vA, vB);
